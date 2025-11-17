@@ -23,6 +23,13 @@ def calculate_average_salary():
     average = 0
 
     #add your implementation to calculate here
+    for eachDict in employee_data:
+        total += (eachDict["salary"])
+
+    average = total/len(employee_data)
+    average = round(average,2)
+    print("Average = ",average)
+    return average
 
 
     return average
